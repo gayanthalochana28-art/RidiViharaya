@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="si">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="nJLb8L9jwwUssMwNwav-eFadlxuaaG_59R6rUI8TnfY">
+    <title>රිදී විහාරය • Annual Esala Perahera 2026</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="256x256" />
+    <link rel="apple-touch-icon" href="logo.png" sizes="180x180" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="OIjTD2wMWaNhOFp6cK7PDYlE1L7Nq4sji-djcmOR0lk" />
+</head>
+<body>
+
+    <!-- ─── PRELOADER ─── -->
+    <div class="preloader" id="preloader">
+        <div class="curtain curtain-l"></div>
+        <div class="curtain curtain-r"></div>
+        <div class="preloader-core">
+            <div class="seal">☸</div>
+            <div class="mini">RIDI VIHARA • 2026</div>
+            <div class="loading-title">ඇසළ පෙරහැර මංගල්‍යය</div>
+            <div class="progress"><span></span></div>
+            <small>✦ ENTERING THE FESTIVAL ✦</small>
+        </div>
+    </div>
+
+    <!-- ─── TRANSITION ─── -->
+    <div class="transition-layer" id="transitionLayer"></div>
+
+    <!-- ─── FLOATING PARTICLES ─── -->
+    <div class="particles"></div>
+    <div class="petals"></div>
+
+    <!-- ─── TOPBAR ─── -->
+    <header class="topbar" id="topbar">
+        <a href="#home" class="logo">
+            <span class="seal small">☸</span>
+            <span><b>රිදී විහාරය</b><small>RIDI VIHARA</small></span>
+        </a>
+        <nav>
+            <a href="#home" data-si="මුල් පිටුව" data-en="Home">මුල් පිටුව</a>
+            <a href="#poster" data-si="පෝස්ටරය" data-en="Poster">පෝස්ටරය</a>
+            <a href="#invitation" data-si="ආරාධනා" data-en="Invitation">ආරාධනා</a>
+            <a href="#schedule" data-si="කාලසටහන" data-en="Schedule">කාලසටහන</a>
+            <a href="#experience" data-si="අත්දැකීම" data-en="Experience">අත්දැකීම</a>
+            <a href="#location" data-si="ස්ථානය" data-en="Location">ස්ථානය</a>
+        </nav>
+        <div class="language">
+            <button id="si" class="active">සිංහල</button>
+            <button id="en">English</button>
+        </div>
+    </header>
+
+    <!-- ─── MAIN ─── -->
+    <main>
+
+        <!-- ─── HERO ─── -->
+        <section id="home" class="hero">
+            <video class="hero-video" autoplay muted loop playsinline poster="poster1.png">
+                <source src="Video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-shade"></div>
+            <div class="hero-frame"></div>
+            <canvas id="iceRainCanvas"></canvas>
+
+            <!-- golden rays -->
+            <div class="golden-rays">
+                <div class="ray" style="--rot:-25deg;--tx:-30%;"></div>
+                <div class="ray" style="--rot:-12deg;--tx:-10%;"></div>
+                <div class="ray" style="--rot:0deg;--tx:0%;"></div>
+                <div class="ray" style="--rot:12deg;--tx:10%;"></div>
+                <div class="ray" style="--rot:25deg;--tx:30%;"></div>
+            </div>
+
+            <!-- floating decorative text -->
+            <div class="floating-decor d1">✦</div>
+            <div class="floating-decor d2">☸</div>
+            <div class="floating-decor d3">❈</div>
+
+            <div class="hero-copy">
+                <!-- creative intro badge -->
+                <div class="intro-badge">
+                    <span class="line-dot"></span>
+                    <span data-si="2026 • රිදී විහාරය" data-en="2026 • RIDI VIHARA">2026 • රිදී විහාරය</span>
+                    <span class="badge-divider">—</span>
+                    <span data-si="ඇසළ පෙරහැර" data-en="ESALA PERAHERA">ඇසළ පෙරහැර</span>
+                </div>
+
+                <h1>
+                    <span class="glow-char" data-si="වාර්ෂික<br><em>ඇසළ පෙරහැර</em><br>මංගල්‍යය" data-en="Annual<br><em>Esala Perahera</em><br>Festival">වාර්ෂික<br><em>ඇසළ පෙරහැර</em><br>මංගල්‍යය</span>
+                </h1>
+
+                <p class="hero-sub">
+                    <span data-si="භක්තිය" data-en="Faith">භක්තිය</span>
+                    <span>•</span>
+                    <span data-si="සම්ප්‍රදාය" data-en="Tradition">සම්ප්‍රදාය</span>
+                    <span>•</span>
+                    <span data-si="සංස්කෘතිය" data-en="Culture">සංස්කෘතිය</span>
+                    <span>•</span>
+                    <span data-si="අසිරිමත් උරුමය" data-en="Living Heritage">අසිරිමත් උරුමය</span>
+                </p>
+
+                <!-- ─── COUNTDOWN ─── -->
+                <div class="countdown-wrap" id="countdownWrap">
+                    <div class="countdown-item"><span class="num" id="cdDays">00</span><span class="label" data-si="දින" data-en="Days">දින</span></div>
+                    <span class="countdown-sep">:</span>
+                    <div class="countdown-item"><span class="num" id="cdHours">00</span><span class="label" data-si="පැය" data-en="Hours">පැය</span></div>
+                    <span class="countdown-sep">:</span>
+                    <div class="countdown-item"><span class="num" id="cdMinutes">00</span><span class="label" data-si="මිනිත්තු" data-en="Mins">මිනිත්තු</span></div>
+                    <span class="countdown-sep">:</span>
+                    <div class="countdown-item"><span class="num" id="cdSeconds">00</span><span class="label" data-si="තත්පර" data-en="Secs">තත්පර</span></div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#invitation" class="gold-btn" data-si="ආරාධනා පත්‍රය විවෘත කරන්න" data-en="Open Invitation">ආරාධනා පත්‍රය විවෘත කරන්න</a>
+                    <a href="#schedule" class="ghost-btn" data-si="වැඩසටහන" data-en="Programme">වැඩසටහන</a>
+                </div>
+
+                <div class="date-ribbon">
+                    <span>31</span> AUG <span>—</span> <span>04</span> SEP <span class="year-highlight">2026</span>
+                </div>
+            </div>
+
+            <div class="sound-tip">✦ CINEMATIC EXPERIENCE ✦</div>
+        </section>
+
+        <!-- ─── QUOTE STRIP ─── -->
+        <section class="quote-strip">
+            <div class="reveal">
+                <span class="q-icon">❈</span>
+                <p data-si="“සිරිලක උරුමයේ අසිරිමත් රිද්මය සමඟ එක්වන්න.”" data-en="“Join the magnificent rhythm of Sri Lanka's living heritage.”">“සිරිලක උරුමයේ අසිරිමත් රිද්මය සමඟ එක්වන්න.”</p>
+                <span class="q-icon">❈</span>
+            </div>
+        </section>
+
+        <!-- ─── POSTER SECTION ─── -->
+        <section id="poster" class="poster-section reveal">
+            <div class="section-title">
+                <small>OFFICIAL POSTER</small>
+                <h2 data-si="2026 ඇසළ පෙරහැර මංගල්‍යය" data-en="2026 Esala Perahera Festival">2026 ඇසළ පෙරහැර මංගල්‍යය</h2>
+            </div>
+            <div class="poster-wrapper">
+                <img src="poster1.png" alt="Ridi Viharaya Esala Perahera 2026 Poster" loading="lazy">
+                <div class="poster-overlay"></div>
+                <div class="poster-badge">
+                    <span data-si="✦ රිදී විහාරය" data-en="✦ RIDI VIHARA">✦ රිදී විහාරය</span>
+                    <span>•</span>
+                    <span data-si="ඇසළ පෙරහැර 2026" data-en="ESALA PERAHERA 2026">ඇසළ පෙරහැර 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── INVITATION ─── -->
+        <section id="invitation" class="section invitation-section">
+            <div class="section-title reveal">
+                <small>THE INVITATION</small>
+                <h2 data-si="ගෞරවයෙන් ආරාධනා කරමු" data-en="A Graceful Invitation">ගෞරවයෙන් ආරාධනා කරමු</h2>
+            </div>
+            <div class="invitation reveal">
+                <div class="inv-inner">
+                    <div class="corner c1">❧</div>
+                    <div class="corner c2">❧</div>
+                    <div class="corner c3">❧</div>
+                    <div class="corner c4">❧</div>
+                    <div class="inv-logo">☸</div>
+                    <div class="inv-kicker">RIDI VIHARA • RIDEE VIHARAYA</div>
+                    <div class="line">──── ❈ ────</div>
+                    <h3 data-si="ආරාධනා" data-en="Invitation">ආරාධනා</h3>
+                    <h4 data-si="රිදී විහාරය වාර්ෂික<br>ඇසළ පෙරහැර මංගල්‍යය" data-en="Ridi Viharaya Annual<br>Esala Perahera Festival">රිදී විහාරය වාර්ෂික<br>ඇසළ පෙරහැර මංගල්‍යය</h4>
+                    <p data-si="ශ්‍රී ලාංකීය ආගමික හා සංස්කෘතික උරුමයේ අසිරිය විඳගැනීමට, මෙම උතුම් මංගල්‍යයට ඔබත් සහභාගී වන්න." data-en="You are warmly invited to experience the beauty of Sri Lanka's sacred religious and cultural heritage at this magnificent festival.">ශ්‍රී ලාංකීය ආගමික හා සංස්කෘතික උරුමයේ අසිරිය විඳගැනීමට, මෙම උතුම් මංගල්‍යයට ඔබත් සහභාගී වන්න.</p>
+                    <div class="inv-grid">
+                        <div><b>📅</b><span data-si="දිනය" data-en="Dates">දිනය</span><strong>31 AUG — 04 SEP 2026</strong></div>
+                        <div><b>📍</b><span data-si="ස්ථානය" data-en="Venue">ස්ථානය</span><strong>Ridi Viharaya<br>Ridigama, Kurunegala</strong></div>
+                        <div><b>✦</b><span data-si="කාලය" data-en="Time">කාලය</span><strong data-si="සන්ධ්‍යා කාලය • නිල වේලාව තහවුරු කිරීමට නියමිතයි" data-en="Evening • official time to be confirmed">සන්ධ්‍යා කාලය • නිල වේලාව තහවුරු කිරීමට නියමිතයි</strong></div>
+                    </div>
+                    <button class="gold-btn" id="download">✦ <span data-si="ආරාධනා පත්‍රය බාගන්න" data-en="Download Invitation">ආරාධනා පත්‍රය බාගන්න</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SCHEDULE ─── -->
+        <section id="schedule" class="section dark">
+            <div class="section-title reveal">
+                <small>THE FESTIVAL</small>
+                <h2 data-si="📅 දිනපතා කාලසටහන" data-en="📅 Daily Festival Schedule">📅 දිනපතා කාලසටහන</h2>
+            </div>
+            <div class="schedule-intro reveal" data-si="2026 අගෝස්තු 31 සිට සැප්තැම්බර් 04 දක්වා පෙරහැර මංගල්‍යය අදියර කිහිපයකින් විචිත්‍රවත් වේ." data-en="From 31 August to 04 September 2026, the festival unfolds through several colourful stages.">2026 අගෝස්තු 31 සිට සැප්තැම්බර් 04 දක්වා පෙරහැර මංගල්‍යය අදියර කිහිපයකින් විචිත්‍රවත් වේ.</div>
+            <div class="timeline">
+                <article class="event reveal">
+                    <div class="event-date"><b>31</b><small>AUG</small></div>
+                    <div>
+                        <span class="tag">OPENING</span>
+                        <h3 data-si="සන්ධ්‍යා පෙරහැර — ආරම්භය" data-en="Evening Procession — Opening">සන්ධ්‍යා පෙරහැර — ආරම්භය</h3>
+                        <p data-si="දේවාල පෙරහැර මට්ටමින් ආරම්භ වී ක්‍රමයෙන් අලි ඇතුන්, නර්තන ශිල්පීන්, බෙරකරුවන් සහ අනෙකුත් සම්ප්‍රදායික අංග එකතු වෙමින් පෙරහැර විචිත්‍රවත් වේ." data-en="Beginning at the Devalaya level, the procession gradually becomes more vibrant with elephants, dancers, drummers and traditional performers.">දේවාල පෙරහැර මට්ටමින් ආරම්භ වී ක්‍රමයෙන් අලි ඇතුන්, නර්තන ශිල්පීන්, බෙරකරුවන් සහ අනෙකුත් සම්ප්‍රදායික අංග එකතු වෙමින් පෙරහැර විචිත්‍රවත් වේ.</p>
+                    </div>
+                </article>
+                <article class="event reveal">
+                    <div class="event-date"><b>01</b><small>SEP</small></div>
+                    <div>
+                        <span class="tag">TRADITION</span>
+                        <h3 data-si="සන්ධ්‍යා පෙරහැර" data-en="Evening Procession">සන්ධ්‍යා පෙරහැර</h3>
+                        <p data-si="සම්ප්‍රදායික නර්තන, වාදන හා ආගමික අංග සමඟ වීථි සංචාරය සිදු කෙරේ. අලි ඇතුන් සහ නර්තන ශිල්පීන් වැඩි ප්‍රමාණයක් එකතු වෙමින් පෙරහැර වඩාත් විචිත්‍රවත් වේ." data-en="The procession travels through the streets with traditional dance, music and religious elements. More elephants and dancers join, making it more vibrant.">සම්ප්‍රදායික නර්තන, වාදන හා ආගමික අංග සමඟ වීථි සංචාරය සිදු කෙරේ. අලි ඇතුන් සහ නර්තන ශිල්පීන් වැඩි ප්‍රමාණයක් එකතු වෙමින් පෙරහැර වඩාත් විචිත්‍රවත් වේ.</p>
+                    </div>
+                </article>
+                <article class="event reveal">
+                    <div class="event-date"><b>02</b><small>SEP</small></div>
+                    <div>
+                        <span class="tag">CULTURE</span>
+                        <h3 data-si="විශේෂ සන්ධ්‍යා පෙරහැර" data-en="Special Evening Procession">විශේෂ සන්ධ්‍යා පෙරහැර</h3>
+                        <p data-si="අලි ඇතුන්, නර්තන ශිල්පීන්, බෙරකරුවන් සහ සංස්කෘතික කලාකරුවන් සමඟ අලංකාර පෙරහැරක්. සම්ප්‍රදායික අංග රාශියක් එක්ව විශිෂ්ට දර්ශනයක් මවයි." data-en="A spectacular procession featuring elephants, dancers, drummers and cultural performers. A magnificent display of traditional elements.">අලි ඇතුන්, නර්තන ශිල්පීන්, බෙරකරුවන් සහ සංස්කෘතික කලාකරුවන් සමඟ අලංකාර පෙරහැරක්. සම්ප්‍රදායික අංග රාශියක් එක්ව විශිෂ්ට දර්ශනයක් මවයි.</p>
+                    </div>
+                </article>
+                <article class="event featured reveal">
+                    <div class="event-date"><b>03</b><small>SEP</small></div>
+                    <div>
+                        <span class="tag">GRAND NIGHT</span>
+                        <h3 data-si=" අවසන් මහා සන්ධ්‍යා පෙරහැර " data-en="Final Evening Procession">අවසන් මහා රන්දෝලි පෙරහැර</h3>
+                        <p data-si=". අලි ඇතුන්, නර්තන ශිල්පීන්, බෙරකරුවන් සහ සංස්කෘතික කලාකරුවන් සමඟ අලංකාර පෙරහැරක්. සම්ප්‍රදායික අංග රාශියක් එක්ව විශිෂ්ට දර්ශනයක් මවයි ." data-en="The largest and most spectacular procession is held on the final night (September 03 evening). Confirm the official final date and time with the organizers.">උත්සවයේ අවසන් රාත්‍රියේදී (සැප්තැම්බර් 03 සවස) විශාලතම සහ අලංකාරම පෙරහැර වීථි සංචාරය කෙරේ. නිල අවසන් දිනය හා වේලාව සංවිධායකයන්ගෙන් තහවුරු කරන්න.</p>
+                    </div>
+                </article>
+                <article class="event reveal">
+                    <div class="event-date"><b>04</b><small>SEP</small></div>
+                    <div>
+                        <span class="tag">CLOSING</span>
+                        <h3 data-si="අවසන් මහා රන්දෝලි පෙරහැර" data-en=" Grand Final Randoli Procession & Water-Cutting Ceremony ">අවසන් මහා රන්දෝලි පෙරහැර</h3>
+                        <p data-si=" උත්සවයේ අවසන් රාත්‍රියේදී (සැප්තැම්බර් 04 සවස) විශාලතම සහ අලංකාරම පෙරහැර වීථි සංචාරය කෙරේ.  අවසන් දින අලුයම සාම්ප්‍රදායික දියකැපීමේ චාරිත්‍රය සිදු කිරීමෙන් පසු දහවල් පෙරහැර පවත්වා මංගල්‍යය නිමා වේ." data-en="On the final day, the traditional water-cutting ceremony is performed in the early morning, followed by the daytime procession and conclusion of the festival.">අවසන් දින අලුයම සාම්ප්‍රදායික දියකැපීමේ චාරිත්‍රය සිදු කිරීමෙන් පසු දහවල් පෙරහැර පවත්වා මංගල්‍යය නිමා වේ.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ─── SERVICES ─── -->
+        <section class="section services">
+            <div class="section-title reveal">
+                <small>VISITOR GUIDE</small>
+                <h2 data-si="ඔබගේ ගමන පහසු කරගන්න" data-en="Plan Your Visit">ඔබගේ ගමන පහසු කරගන්න</h2>
+            </div>
+            <div class="cards">
+                <article class="feature reveal">
+                    <span class="feature-icon">🚌</span>
+                    <h3 data-si="ප්‍රවාහන සහ රථවාහන සැලැස්ම" data-en="Transport & Traffic Plan">ප්‍රවාහන සහ රථවාහන සැලැස්ම</h3>
+                    <p data-si="කුරුණෑගල මධ්‍යම බස් නැවතුම්පොළ සහ මැල්සිරිපුර හරහා රිදී විහාරය දෙසට විශේෂ බස් සේවා ක්‍රියාත්මක විය හැක. නම් කරන ලද රථවාහන ගාල් භාවිතා කරන්න." data-en="Special bus services may operate from Kurunegala Central Bus Stand and via Melsiripura towards Ridi Viharaya. Use designated parking areas.">කුරුණෑගල මධ්‍යම බස් නැවතුම්පොළ සහ මැල්සිරිපුර හරහා රිදී විහාරය දෙසට විශේෂ බස් සේවා ක්‍රියාත්මක විය හැක. නම් කරන ලද රථවාහන ගාල් භාවිතා කරන්න.</p>
+                    <a target="_blank" href="https://rideeviharaya.lk/event/rideeviharaya-perahera-festival-a-cultural-extravaganza-in-sri-lanka/">Official event info ↗</a>
+                </article>
+                <article class="feature reveal">
+                    <span class="feature-icon">👮</span>
+                    <h3 data-si="ආරක්ෂක සහ හදිසි සේවා" data-en="Safety & Emergency Services">ආරක්ෂක සහ හදිසි සේවා</h3>
+                    <p data-si="විශේෂ පොලිස් හා සිවිල් ආරක්ෂක නිලධාරීන්ගේ උපදෙස් අනුගමනය කරන්න. ප්‍රථමාධාර සහ ගිලන්රථ සේවා පිළිබඳ නිල උපදෙස් අනුගමනය කරන්න." data-en="Follow instructions from police and civil security officers. Follow official guidance regarding first-aid points and ambulance services.">විශේෂ පොලිස් හා සිවිල් ආරක්ෂක නිලධාරීන්ගේ උපදෙස් අනුගමනය කරන්න. ප්‍රථමාධාර සහ ගිලන්රථ සේවා පිළිබඳ නිල උපදෙස් අනුගමනය කරන්න.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ─── EXPERIENCE / YOUTUBE LIVE ─── -->
+        <section id="experience" class="section cinema">
+            <video class="cinema-bg" autoplay muted loop playsinline poster="poster1.png">
+                <source src="Video.mp4" type="video/mp4">
+            </video>
+            <div class="cinema-shade"></div>
+
+            <div class="cinema-content reveal">
+                <div class="live-badge">
+                    <span class="dot"></span>
+                    <span data-si="සජීවී විකාශය" data-en="LIVE STREAM">සජීවී විකාශය</span>
+                </div>
+
+                <div class="section-title">
+                    <small>GRAND RANDOLI • FINAL NIGHT</small>
+                    <h2 data-si="අවසන් මහා රන්දෝලි පෙරහැර — සැප්තැම්බර් 04" data-en="Grand Final Randoli Procession — September 04">අවසන් මහා රන්දෝලි පෙරහැර — සැප්තැම්බර් 04</h2>
+                </div>
+
+                <p class="sub-desc" data-si="උත්සවයේ උච්චතම අවස්ථාව — විශාලතම හා වඩාත්ම අලංකාර පෙරහැර සැප්තැම්බර් 04 සවස 7:15 ට ආරම්භ වේ." data-en="The pinnacle of the festival — the largest and most magnificent procession begins on September 04 at 7:15 PM.">උත්සවයේ උච්චතම අවස්ථාව — විශාලතම හා වඩාත්ම අලංකාර පෙරහැර සැප්තැම්බර් 04 සවස 7:15 ට ආරම්භ වේ.</p>
+
+                <!-- YouTube live thumbnail with play overlay -->
+                <div class="video-shell" id="ytVideoShell">
+                    <img class="yt-thumb" src="img1.png" alt="YouTube Live Thumbnail" loading="lazy">
+                    <div class="play-overlay" id="playOverlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                    <div class="yt-badge">
+                        <span class="live-text">●</span> LIVE <span style="opacity:.5;margin:0 6px;">•</span> <span data-si="සැප්තැම්බර් 04" data-en="Sep 04">සැප්තැම්බර් 04</span>
+                    </div>
+                </div>
+
+                <div class="stream-time">
+                    <span data-si="🔴 සජීවී විකාශය ආරම්භය" data-en="🔴 Live stream starts">🔴 සජීවී විකාශය ආරම්භය</span>
+                    &nbsp;<strong>සැප්තැම්බර් 04 • 7:15 PM</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── LOCATION ─── -->
+        <section id="location" class="section location">
+            <div class="location-copy reveal">
+                <div class="section-title left">
+                    <small>VISIT US</small>
+                    <h2 data-si="📍 රිදී විහාරය" data-en="📍 Ridi Viharaya">📍 රිදී විහාරය</h2>
+                </div>
+                <p data-si="රිදීගම, කුරුණෑගල, ශ්‍රී ලංකාව" data-en="Ridigama, Kurunegala, Sri Lanka">රිදීගම, කුරුණෑගල, ශ්‍රී ලංකාව</p>
+                <a class="gold-btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Ridi+Viharaya+Sri+Lanka">📍 Open Google Maps</a>
+            </div>
+            <iframe src="https://www.google.com/maps?q=Ridi%20Viharaya%20Sri%20Lanka&output=embed" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="logo">
+            <span class="seal small">☸</span>
+            <span><b>රිදී විහාරය</b><small>RIDI VIHARA</small></span>
+        </div>
+        <p data-si="සියලු දෙනාටම සාදරයෙන් ආරාධනා කරමු." data-en="Everyone is warmly invited.">සියලු දෙනාටම සාදරයෙන් ආරාධනා කරමු.</p>  
+        <p>© 2026 Esala Perahera . All Rights Reserved.</p>  
+        <p> Crated by Gayantha.</p> 
+
+    <script src="app.js"></script>
+
+</body>
+</html>
